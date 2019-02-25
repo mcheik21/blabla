@@ -1,0 +1,109 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User navigates to Application URL",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9061316304,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on the Login page URL \"http://localhost:8888/index.php?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:8888/index.php?",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinition.i_am_on_the_Login_page_URL(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Sign In with valid credential",
+        "description": "",
+        "id": "title-of-your-feature;sign-in-with-valid-credential",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 135300233,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I enter username as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "admin",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinition.i_enter_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130359146,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i enter password as \"pccmccpcc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "pccmccpcc123",
+                  "offset": 21
+                }
+              ],
+              "location": "stepdefinition.i_enter_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3174676679,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on login button",
+            "match": {
+              "location": "stepdefinition.click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Title of your feature",
+    "description": "In order to use the application features.",
+    "id": "title-of-your-feature",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Login"
+      }
+    ]
+  }
+]
