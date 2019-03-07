@@ -1,0 +1,108 @@
+overview
+ // MetaInformation
+   
+   public void ClickMetaInformationAndFillAllInformations() {
+	   if(DriverUtil.isChrome()) {
+			
+	   		waitForElementById(ExpectedConditions.visibilityOfElementLocated(By.linkText("Meta Information")));
+	   		
+	   		
+	   	}
+	  MetaInformation.click();
+	
+   }
+   
+   //name of  Information Meta
+   public void NameOfInformationMeta() {
+	   if(DriverUtil.isChrome()) {
+			
+		   //waitForElementById(ExpectedConditions.visibilityOfElementLocated(By.id("fs_grid_meta_informationGrid_cell_0_unsaved-document']")));
+		   WebDriverWait wait= new WebDriverWait(driver,10);
+		   WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='fs_grid_meta_informationGrid_cell_0_unsaved-document']")));
+		   element.click();
+		   WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='fs_grid_meta_informationGrid_0_unsaved-document']")));
+		   element1.sendKeys("Test");
+		  
+		   /*
+		    * DropDownList for Financial:   fs_grid_meta_informationGrid_cell_2_unsaved-document
+		    */
+		  
+		   WebDriverWait wait2 = new WebDriverWait(driver,15);
+		   //WebElement element2=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("dropdownlistContentcustomeditorfs_grid_meta_informationGridunsaved-document_2")));
+		   //element2.isSelected();
+		   
+		   //Select MethodDrop=new Select(driver.findElement(By.id("dropdownlistContentcustomeditorfs_grid_meta_informationGridunsaved-document_2")));
+	       //MethodDrop.selectByIndex(02); 
+			// WebElement hiddenWebElement = driver.findElement(By.xpath("//div[@id='dropdownlistContentcustomeditorfs_grid_meta_informationGridunsaved-document_2']"));
+			 //((JavascriptExecutor)driver).executeScript("arguments[0].click()", hiddenWebElement);
+		   
+		   /*
+		    *  Statment date
+
+
+ 
+  @FindBy(how=How.LINK_TEXT, using="Meta Information")
+  private WebElement MetaInformation;
+  @FindBy(how=How.XPATH, using="//div[@id='fs_grid_meta_informationGrid_cell_0_unsaved-document']")
+  private WebElement SendName;
+  
+  @FindBy(how=How.ID,using="dropdownlistContentcustomeditorfs_grid_meta_informationGridunsaved-document_2")
+  private WebElement DropDownFinancial;
+
+   // @FindBy(how = How.ID, using = "duedate")
+    //private WebElement duedateTextField;
+
+
+
+
+
+
+
+websteps
+
+
+// Click End Statement 
+When("^I click to End Statement selection and click yes$", () -> {
+    // Write code here that turns the phrase above into concrete actions
+		overviewPage.EndStatementSelectionAndClickYes() ;
+		overviewPage.ClickYesToAndStatement();
+		   
+	});
+
+// Meta Information and fill the informations
+
+
+
+When("^I click to Meta Information and Fill all the information$", () -> {
+    // Write code here that turns the phrase above into concrete actions
+	Thread.sleep(1000);
+		overviewPage.ClickMetaInformationAndFillAllInformations() ;
+	
+		
+	
+		   
+	});
+
+
+When("^Fill The Information$", () -> {
+overviewPage.NameOfInformationMeta();
+		
+
+		   
+	});
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+    	 
+
+		    *  
+
+
+
+
+
+websteps
